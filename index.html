@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak Buku</title>
+    <!-- Icon Link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <h1>Rak Buku</h1>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <!-- Container Start -->
+        <div class="content">
+            <!-- Row 1-->
+            <div class="row-1">
+                <div class="form-container">
+                    <h2 class="title">Tambah Buku Baru <i class='bx bx-book-add'></i></h2>
+                    <form id="formDataBuku" action="" method="post">
+                        <div class="form-group">
+                            <input type="text" name="title" id="title" placeholder="">
+                            <label for="title">Judul</label>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <input type="text" name="author" id="author" placeholder="">
+                                <label for="author">Penulis</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="year" id="year" placeholder="">
+                                <label for="year">Tahun</label>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="isRead" id="isRead" placeholder="">
+                            <label for="isRead">Sudah selesai dibaca</label>
+                        </div>
+                        <button type="submit" class="submit-button">Simpan</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row-2">
+                <div class="cari-container">
+                    <h2 class="title">Cari Buku <i class='bx bx-search'></i></h2>
+                    <form id="formSearch" action="" method="post">
+                        <div class="form-search">
+                            <input type="search" name="search" id="search" placeholder="">
+                            <label for="pencarian">Cari Buku</label>
+                        </div>
+                        <div class="form-search-bottom">
+                            <button type="reset" class="reset-button"><i class='bx bx-reset'></i></button>
+                            <button type="submit" class="cari-button"><i class='bx bx-search-alt-2'></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row-3">
+                <div class="unRead-container">
+                    <h2 class="title">Buku Belum Dibaca <i class='bx bx-message-square-x'></i></h2>
+                    <div id="belumDibaca">
+                    </div>
+                </div>
+                <div class="beRead-container">
+                    <h2 class="title">Buku Sudah Dibaca <i class='bx bx-message-square-check'></i></h2>
+                    <div id="sudahDibaca">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container End -->
+
+        <!-- Aside Start -->
+        <aside>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC-BujEvH7Fe7oZOosPmuOPQ" target="_blank"><i id="logo-youtube" class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/NaelYo" target="_blank"><i id="logo-github" class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/elcodingg/" target="_blank"><i id="logo-instagram" class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- Aside End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
